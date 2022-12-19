@@ -19,7 +19,7 @@ openssl s_server -key server.key -cert server.crt -CAfile cacert.pem -accept 443
 Start TLS-Attacker Connector
 
 ```
-
+java -jar ./target/TLSAttackerConnector2.0.jar --timeout 500 -l 6666 -tP 4433
 ```
 
 Run StateLearner
